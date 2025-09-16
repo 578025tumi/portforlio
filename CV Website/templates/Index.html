@@ -31,6 +31,13 @@
             transform: translateY(-2px); 
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
         }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -46,6 +53,7 @@
                     <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">About</a>
                     <a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">Projects</a>
                     <a href="#skills" class="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">Skills</a>
+                    <a href="#certifications" class="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">Certifications</a>
                     <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">Contact</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-gray-600">
@@ -62,6 +70,7 @@
                 <a href="#about" class="block py-2 text-gray-600 hover:text-gray-900 text-sm font-medium">About</a>
                 <a href="#projects" class="block py-2 text-gray-600 hover:text-gray-900 text-sm font-medium">Projects</a>
                 <a href="#skills" class="block py-2 text-gray-600 hover:text-gray-900 text-sm font-medium">Skills</a>
+                <a href="#certifications" class="block py-2 text-gray-600 hover:text-gray-900 text-sm font-medium">Certifications</a>
                 <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-900 text-sm font-medium">Contact</a>
             </div>
         </div>
@@ -398,6 +407,97 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-light text-gray-900 mb-4 minimal-accent">Certifications</h2>
+            </div>
+            
+            <div class="relative">
+                <button id="scroll-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 text-gray-600 hover:text-gray-900 hover:border-gray-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                
+                <div id="cert-container" class="flex overflow-x-auto scroll-smooth gap-6 px-12 py-4 scrollbar-hide">
+                    <!-- Certificate 1 -->
+                    <div class="flex-none w-64 bg-white border border-gray-200 card-minimal fade-in">
+                        <div class="p-6 text-center">
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L3.09 8.26L12 22L20.91 8.26L12 2ZM12 4.44L18.18 9.26L12 19.56L5.82 9.26L12 4.44Z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-medium text-gray-900 mb-3">Machine Learning Specialization</h4>
+                            <p class="text-sm text-gray-600 mb-4">Stanford University & DeepLearning.AI</p>
+                            <a href="./Files/MyCertificates/ml_specialization.pdf" target="_blank" class="inline-block bg-gray-900 text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 transition-colors">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="flex-none w-64 bg-white border border-gray-200 card-minimal fade-in">
+                        <div class="p-6 text-center">
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L3.09 8.26L12 22L20.91 8.26L12 2ZM12 4.44L18.18 9.26L12 19.56L5.82 9.26L12 4.44Z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-medium text-gray-900 mb-3">Deep Learning Specialization</h4>
+                            <p class="text-sm text-gray-600 mb-4">DeepLearning.AI</p>
+                            <a href="./Files/MyCertificates/deep_learning_specialization.pdf" target="_blank" class="inline-block bg-gray-900 text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 transition-colors">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Certificate 4 -->
+                    <div class="flex-none w-64 bg-white border border-gray-200 card-minimal fade-in">
+                        <div class="p-6 text-center">
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L3.09 8.26L12 22L20.91 8.26L12 2ZM12 4.44L18.18 9.26L12 19.56L5.82 9.26L12 4.44Z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-medium text-gray-900 mb-3">AWS Machine Learning</h4>
+                            <p class="text-sm text-gray-600 mb-4">Amazon Web Services</p>
+                            <a href="./Files/MyCertificates/aws_ml_certification.pdf" target="_blank" class="inline-block bg-gray-900 text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 transition-colors">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5 -->
+                    <div class="flex-none w-64 bg-white border border-gray-200 card-minimal fade-in">
+                        <div class="p-6 text-center">
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L3.09 8.26L12 22L20.91 8.26L12 2ZM12 4.44L18.18 9.26L12 19.56L5.82 9.26L12 4.44Z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-medium text-gray-900 mb-3">Data Science Professional</h4>
+                            <p class="text-sm text-gray-600 mb-4">IBM</p>
+                            <a href="./Files/MyCertificates/ibm_data_science.pdf" target="_blank" class="inline-block bg-gray-900 text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 transition-colors">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="scroll-right" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 text-gray-600 hover:text-gray-900 hover:border-gray-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -561,6 +661,19 @@
             alert('Thank you for your message! This is a demo form - in a real implementation, this would send your message.');
         });
 
+        // Certification scroll functionality
+        const certContainer = document.getElementById('cert-container');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+
+        scrollLeftBtn.addEventListener('click', () => {
+            certContainer.scrollBy({ left: -280, behavior: 'smooth' });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            certContainer.scrollBy({ left: 280, behavior: 'smooth' });
+        });
+
         // Project demo buttons
         document.querySelectorAll('button').forEach(button => {
             if (button.textContent.includes('Live Demo') || button.textContent.includes('Watch Demo')) {
@@ -575,5 +688,5 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97faad2c50862940',t:'MTc1Nzk2NjA3Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97fe9c2611044ed6',t:'MTc1ODAwNzMxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
